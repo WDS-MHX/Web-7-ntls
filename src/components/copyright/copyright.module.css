@@ -1,0 +1,30 @@
+.container-footer {
+  display: flex;
+ font-size: 0.5em;
+ text-align: center;
+  }
+  
+  .container-footer div {
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .container-footer img {
+    width: 10px;
+  }
+.copyright{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(34, 97, 137);
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+}
+
+.dated{
+  color: white;
+  font-size: 0.5em;
+}
