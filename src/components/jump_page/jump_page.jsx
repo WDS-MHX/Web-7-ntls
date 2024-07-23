@@ -77,21 +77,6 @@ function JumpPage() {
       buttonUrl: 'https://cangiorungsac.anhhunglietsi.vn/',
     },
     {
-      id: 'nhabe',
-      imgSrc: 'src\\components\\img\\img_nt\\nha be.png',
-      alt: 'Nghĩa trang Liệt sĩ Nhà Bè',
-      title: 'Nghĩa trang Liệt sĩ',
-      buttonLabel: 'Nhà Bè',
-      info: (
-        <>
-          <p><strong>Địa chỉ:</strong> 508 Huỳnh Tấn Phát, Bình Thuận, Quận 7, TP. HCM</p>
-          <p><strong>Diện tích:</strong> Khoảng 4 ha</p>
-          <p><strong>Năm xây dựng:</strong></p>
-          <p><strong>Số lượng mộ liệt sĩ:</strong> Hơn 1,000 mộ</p>
-        </>
-      ),
-    },
-    {
       id: 'binhchanh',
       imgSrc: 'src\\components\\img\\img_nt\\binh chanh.png',
       alt: 'Nghĩa trang Liệt sĩ Bình Chánh',
@@ -103,6 +88,22 @@ function JumpPage() {
           <p><strong>Diện tích:</strong> Khoảng 5 ha</p>
           <p><strong>Năm xây dựng:</strong></p>
           <p><strong>Số lượng mộ liệt sĩ:</strong> Hơn 1,900 mộ</p>
+        </>
+      ),
+      buttonUrl: 'https://nghiatranglietsibinhchanhbinhtan.vn/',
+    },
+    {
+      id: 'nhabe',
+      imgSrc: 'src\\components\\img\\img_nt\\nha be.png',
+      alt: 'Nghĩa trang Liệt sĩ Nhà Bè',
+      title: 'Nghĩa trang Liệt sĩ',
+      buttonLabel: 'Nhà Bè',
+      info: (
+        <>
+          <p><strong>Địa chỉ:</strong> 508 Huỳnh Tấn Phát, Bình Thuận, Quận 7, TP. HCM</p>
+          <p><strong>Diện tích:</strong> Khoảng 4 ha</p>
+          <p><strong>Năm xây dựng:</strong></p>
+          <p><strong>Số lượng mộ liệt sĩ:</strong> Hơn 1,000 mộ</p>
         </>
       ),
     },
@@ -160,7 +161,7 @@ function JumpPage() {
                     className={styles['button']}
                     onClick={(e) => {
                       e.stopPropagation();
-                      if (location.id === 'binhchanh' || location.id === 'hocmon' || location.id === 'nhabe' || location.id === 'thuduc') {
+                      if (location.id === 'hocmon' || location.id === 'nhabe' || location.id === 'thuduc') {
                         handleComingSoonButtonClick(e);
                       } else {
                         handleButtonClick(location.buttonUrl);
